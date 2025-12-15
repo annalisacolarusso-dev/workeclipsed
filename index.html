@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna — Deep Space Archive</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- VISUAL OVERLAYS -->
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+  <div class="warp-overlay"></div>
+
+  <!-- TOP NAV -->
+  <header id="top-nav" class="top-nav hidden">
+    <div class="top-nav-inner">
+      <div class="brand">ANNA // DEEP SPACE ARCHIVE</div>
+      <nav class="nav-links">
+        <button class="nav-link" data-target="map">MAP</button>
+        <button class="nav-link" data-target="origins">ORIGINS</button>
+        <button class="nav-link" data-target="classics">CLASSICS</button>
+        <button class="nav-link" data-target="digital">DIGITAL</button>
+        <button class="nav-link" data-target="work">WORK</button>
+        <button class="nav-link" data-target="collapse">COLLAPSE</button>
+        <button class="nav-link" data-target="freelance">FREELANCE</button>
+        <button class="nav-link" data-target="future">FUTURE</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / LAUNCH -->
+  <section class="hero" id="hero">
+    <div class="hud">
+      <span>ANNA COLARUSSO // FLIGHT LOG</span>
+      <span>STATUS: PRE-LAUNCH</span>
+    </div>
+
+    <div class="ship">
+      <div class="ship-body"></div>
+      <div class="ship-wing left"></div>
+      <div class="ship-wing right"></div>
+      <div class="ship-core"></div>
+    </div>
+
+    <div class="hero-text">
+      <h1>LAUNCH SEQUENCE READY</h1>
+      <p>Navigate the archive by moving forward through space.</p>
+      <button id="launch-btn">ENTER SYSTEM</button>
+    </div>
+  </section>
+
+  <!-- SPACE MAP -->
+  <section id="space-lane" class="space-lane hidden">
+    <div class="space-hud">
+      <span>FORWARD VELOCITY: STABLE</span>
+      <span>DEPTH SCAN: ACTIVE</span>
+    </div>
+
+    <div class="space-field">
+      <button class="planet depth-1" data-target="origins">ORIGINS</button>
+      <button class="planet depth-2" data-target="classics">CLASSICS</button>
+      <button class="planet depth-3" data-target="digital">DIGITAL</button>
+      <button class="planet depth-4" data-target="work">WORK</button>
+      <button class="planet depth-5 glitch" data-target="collapse">COLLAPSE</button>
+      <button class="planet depth-6" data-target="freelance">FREELANCE</button>
+      <button class="planet depth-7" data-target="future">FUTURE</button>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main id="levels" class="levels hidden">
+
+    <section class="level" id="origins">
+      <h2>PLANET: ORIGINS</h2>
+      <p>
+        The first sparks. A poster, a video, a borrowed camera.
+        This is where I realise I can build worlds.
+      </p>
+    </section>
+
+    <section class="level" id="classics">
+      <h2>PLANET: CLASSICS & LANGUAGE</h2>
+      <p>
+        Language, heritage, memory. Words as structure, thought as architecture.
+      </p>
+    </section>
+
+    <section class="level" id="digital">
+      <h2>PLANET: DIGITAL AWAKENING</h2>
+      <p>
+        Code becomes narrative. Technology becomes a storytelling medium.
+      </p>
+    </section>
+
+    <section class="level" id="work">
+      <h2>PLANET: WORK WORLDS</h2>
+      <p>
+        Service, teaching, systems. From hospitality to higher education.
+      </p>
+    </section>
+
+    <section class="level collapse" id="collapse">
+      <h2>PLANET: SYSTEM COLLAPSE</h2>
+      <p>
+        A breakdown. A forced return. The system fails — and reboots.
+      </p>
+    </section>
+
+    <section class="level" id="freelance">
+      <h2>PLANET: FREELANCE ERA</h2>
+      <p>
+        Building bespoke systems for real people, with care and intent.
+      </p>
+    </section>
+
+    <section class="level future" id="future">
+      <h2>OUTER RIM // FUTURE</h2>
+      <p>
+        Uncharted territory. Coordinates pending.
+      </p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
